@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+
+
+    <AutoCompleteTextView
+        android:id="@+id/atv_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="@string/str_atv_places"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/atv_places"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/mapview"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+</RelativeLayout>
+
